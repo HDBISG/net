@@ -39,6 +39,9 @@ public class NetManager {
         }.execute();
     }
 
+    /**
+     * 检测是否能够连接到远程主机的端口号；
+     */
     public static void testSocketAddress() {
 
         try {
@@ -60,6 +63,10 @@ public class NetManager {
 
     }
 
+    /**
+     * 检测是否使用VPN连接
+     * @return
+     */
     public static boolean isConnectVPN() {
         try {
             for( NetworkInterface intf : Collections.list(NetworkInterface.getNetworkInterfaces())) {

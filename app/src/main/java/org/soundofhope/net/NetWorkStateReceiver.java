@@ -9,7 +9,9 @@ import android.net.NetworkInfo;
 import android.util.Log;
 import android.widget.Toast;
 
-
+/**
+ * 可以监测网络变化；但检测不到VPN变化
+ */
 public class NetWorkStateReceiver extends BroadcastReceiver {
 
     @Override
