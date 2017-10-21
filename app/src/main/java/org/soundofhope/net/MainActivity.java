@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new NetManager( "", 80 );
+        NetManager.getInstance( this, "www.google.com", 80 );
     }
 
     /*
