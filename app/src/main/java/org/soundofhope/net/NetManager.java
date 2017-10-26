@@ -97,10 +97,6 @@ public class NetManager {
             //获取移动数据连接的信息
             NetworkInfo dataNetworkInfo = connMgr.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 
-            NetworkInfo vpnNetworkInfo = connMgr.getNetworkInfo(ConnectivityManager.TYPE_VPN);
-
-            NetworkInfo blueToothNetworkInfo = connMgr.getNetworkInfo(ConnectivityManager.TYPE_BLUETOOTH);
-
             if (wifiNetworkInfo.isConnected() || dataNetworkInfo.isConnected()) {
                 return true;
             }
